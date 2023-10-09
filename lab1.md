@@ -8,7 +8,8 @@
 * An example of using `cat` with no arguments would just be using `cat`. This puts the terminal into standard input mode, where everything I type is echoed back to me. In this example, I am in the home directory, and I use the command. At first, the shell prompt disappears, and then I type `hello` and press `Enter`. `hello` is then printed back on the command line to me.  
 ![Image](cat_1.png)  
 2. Share an example of using the command with a path to a directory as an argument.
-- An example of using the command `cd` with a path to a directory as an argument would be if my working directory is `/lecture`, and I use `cd /messages`. Doing so will change the working directory to `/lecture/messages`.
+- An example of using the command `cd` with a path to a directory as an argument would be if my working directory is `/lecture1`, and I use `cd /messages`. Doing so will change the working directory to `/lecture/messages`.
+![Image](cd_2.png)  
 * An example of using the command `ls` with a path to a directory as an argument would be if I am in the home directory, and I use `ls lecture1/`. Doing so will print out the contents of the `lecture1` directory, which in this case includes `Hello.class  Hello.java  messages  README`.
 * An example of using the command `cat` with a path to a directory as an argument would be if I am in the home directory, and I use `cat lecture1/`. Doing so will print out `cat: lecture1/: Is a directory`. 
 3. Share an example of using the command with a path to a file as an argument.
