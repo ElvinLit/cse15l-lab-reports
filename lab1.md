@@ -12,9 +12,12 @@
 ![Image](cd_2.png)  
 * An example of using the command `ls` with a path to a directory as an argument would be if I am in the home directory, and I use `ls lecture1/`. Doing so will print out the contents of the `lecture1` directory, which in this case includes `Hello.class  Hello.java  messages  README`.  
 ![Image](ls_2.png) 
-* An example of using the command `cat` with a path to a directory as an argument would be if I am in the home directory, and I use `cat lecture1/`. Doing so will print out `cat: lecture1/: Is a directory`.  
+* An example of using the command `cat` with a path to a directory as an argument would be if I am in the home directory, and I use `cat lecture1/`. Doing so will print out the error message `cat: lecture1/: Is a directory`.  
 ![Image](cat_2.png) 
 3. Share an example of using the command with a path to a file as an argument.
-* An example of using the `cd` command with a path to a file as an argument 
-* An example of using the `ls` command with a path to a file as an argument 
-* An example of using the command `cat` with a path to a file as an argument would be if I am in the working directory `/lecture1/messages` and use the command `cat en-us.txt`. Doing so will print out the contents of the `en-us.txt` file, which in this case will be `Hello, World!`. 
+* An example of using the `cd` command with a path to a file as an argument would be if I am in the working directory `/lecture/messages` and use the command `cd en-us.txt`. Doing so will produce an error message, which in this case is `bash: cd: en-us.txt: Not a directory`.  
+![Image](cd_3.png) 
+* An example of using the `ls` command with a path to a file as an argument would be if I am in the working directory `/lecture1/messages` and use the command `ls en-us.txt`. Doing so will simply display the name of the file, which in this case is `en-us.txt`.  
+![Image](ls_3.png) 
+* An example of using the command `cat` with a path to a file as an argument would be if I am in the working directory `/lecture1/messages` and use the command `cat en-us.txt`. Doing so will print out the contents of the `en-us.txt` file, which in this case will be `Hello, World!`.  
+![Image](cat_3.png) 
