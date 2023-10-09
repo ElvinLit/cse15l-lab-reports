@@ -10,9 +10,9 @@
 2. Share an example of using the command with a path to a directory as an argument.
 - An example of using the command `cd` with a path to a directory as an argument would be if my working directory is `/lecture1`, and I use `cd /messages`. Doing so will change the working directory to `/lecture/messages`.  
 ![Image](cd_2.png)  
-* An example of using the command `ls` with a path to a directory as an argument would be if I am in the home directory, and I use `ls lecture1/`. Doing so will print out the contents of the `lecture1` directory, which in this case includes `Hello.class  Hello.java  messages  README`.
+* An example of using the command `ls` with a path to a directory as an argument would be if I am in the home directory, and I use `ls lecture1/`. Doing so will print out the contents of the `lecture1` directory, which in this case includes `Hello.class  Hello.java  messages  README`.  
 ![Image](ls_2.png) 
-* An example of using the command `cat` with a path to a directory as an argument would be if I am in the home directory, and I use `cat lecture1/`. Doing so will print out `cat: lecture1/: Is a directory`.
+* An example of using the command `cat` with a path to a directory as an argument would be if I am in the home directory, and I use `cat lecture1/`. Doing so will print out `cat: lecture1/: Is a directory`.  
 ![Image](cat_2.png) 
 3. Share an example of using the command with a path to a file as an argument.
 * An example of using the `cd` command with a path to a file as an argument 
