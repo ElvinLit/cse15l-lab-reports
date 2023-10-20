@@ -12,7 +12,7 @@
 ![Image](cd_2.png)  
 * An example of using the command `ls` with a path to a directory as an argument would be if I am in the home directory, and I use `ls lecture1/`. Doing so will print out the contents of the `lecture1` directory, which in this case includes `Hello.class  Hello.java  messages  README`.  
 ![Image](ls_2.png) 
-* An example of using the command `cat` with a path to a directory as an argument would be if I am in the home directory, and I use `cat lecture1/`. Doing so will print out the error message `cat: lecture1/: Is a directory`. The reason this error message occurs is because cat, short for concatenate, prints out the text content of files. Since directories do not have a straightforward text representation like files, we cannot print them using `cat`. 
+* An example of using the command `cat` with a path to a directory as an argument would be if I am in the home directory, and I use `cat lecture1/`. Doing so will print out the error message `cat: lecture1/: Is a directory`. The reason this error message occurs is because cat, short for concatenate, prints out the text content of files. Since directories do not have a straightforward text representation like files, we cannot print them using `cat`.  
 ![Image](cat_2.png) 
 3. Share an example of using the command with a path to a file as an argument.
 * An example of using the `cd` command with a path to a file as an argument would be if I am in the working directory `home/lecture/messages` and use the command `cd en-us.txt`. Doing so will produce an error message, which in this case is `bash: cd: en-us.txt: Not a directory`. This is because cd, or change directory, is meant for navigating through directories. As such, we cannot use it on a file, which is not a directory.  
