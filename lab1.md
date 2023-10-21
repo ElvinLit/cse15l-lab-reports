@@ -3,7 +3,7 @@
 1. Share an example of using the command with no arguments.
 * An example of using the `cd` command with no arguments would be just using `cd`. Just using `cd` without any arguments changes the current directory to the home directory. In the screenshot below, I was currently in the `/home/lecture1` directory. upon using the command `cd`, I am returned to the home directory.  
 ![Image](cd_1.png)
-* An example of using the command `ls` with no arguments would be just using `ls`. Doing so will print the contents of the working directory to the terminal. In this example, I am in the home directory, and when I run the command, "lecture1" is displayed to me.  
+* An example of using the command `ls` with no arguments would be just using `ls`. Doing so will print the contents of the working directory to the terminal. In this example, I am in the home directory, and when I run the command, "lecture1", which is a directory, is displayed to me.  
 ![Image](ls_1.png)  
 * An example of using `cat` with no arguments would just be using `cat`. This puts the terminal into standard input mode, where everything I type is echoed back to me. In this example, I am in the home directory, and I use the command. At first, the shell prompt disappears, and then I type *"hello"* and press **Enter**. `hello` is then printed back on the command line to me.  
 ![Image](cat_1.png)  
