@@ -25,5 +25,27 @@ This is the test case that I created which produced an error for the ArrayExampl
 This is an input that doesn't induce a failure. It handles the case of an empty list. 
 - The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)  
 ![Image](lab3_failures.png)
+In the symptom, it can be seen that the failed test case has a 0 in the first index when the expected is 5. The empty case works as intended.
 - The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+Before:
+```java
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+After:
+```java
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
 - Briefly describe why the fix addresses the issue.
+The issue with the method was that instead of modifying the `newArray`, we were modifying the original `arr`. As a result, the method would always return a list of 0s since the elements that were being copied were values of 0 from the newly created empty array. To fix this, I simply changed the method to modify `newArray` so that it gets filled with elements from the original array. 
