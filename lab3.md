@@ -52,5 +52,19 @@ The issue with the method was that instead of modifying the `newArray`, we were 
 
 ## Part 2 - Researching Commands
 I am using the `find` command
-1. `find ./technical -type d`
-  - This command finds all the directories within `./technical`.
+1. `-type` option, which searches based on a specific type. 
+  - `find ./technical -type d`
+    - Output:
+```bash
+./technical
+./technical/911report
+./technical/biomed
+./technical/government
+./technical/government/About_LSC
+./technical/government/Alcohol_Problems
+./technical/government/Env_Prot_Agen
+./technical/government/Gen_Account_Office
+./technical/government/Media
+./technical/government/Post_Rate_Comm
+./technical/plos
+```
