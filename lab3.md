@@ -24,9 +24,9 @@ This is the test case that I created which produced an error for the ArrayExampl
 ```
 This is an input that doesn't induce a failure. It handles the case of an empty list. 
 - The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)  
-![Image](lab3_failures.png)
+![Image](lab3_failures.png)  
 In the symptom, it can be seen that the failed test case has a 0 in the first index when the expected is 5. The empty case works as intended.
-- The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+- The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)  
 Before:
 ```java
   static int[] reversed(int[] arr) {
