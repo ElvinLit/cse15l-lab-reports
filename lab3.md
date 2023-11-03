@@ -15,6 +15,15 @@ public void testReversed2() {
 This is the test case that I created which produced an error for the ArrayExamples.reversed() method. The expected list should be {5,4,3,2,1}, but {0,0,0,0,0} was returned instead. 
 
 - An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-- The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+```java
+ @Test
+  public void testReversed() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
+This is an input that doesn't induce a failure. It handles the case of an empty list. 
+- The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)  
+![Image](lab3_failures.png)
 - The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 - Briefly describe why the fix addresses the issue.
