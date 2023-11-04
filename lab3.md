@@ -70,32 +70,32 @@ I am using the `find` command
     ```
   - Example 2) `find ./technical -type f`, which finds all regular files within the directory `./technical`. This is useful if you want to filter out only the files. 
     - Output:
-```bash
-./technical/biomed/1471-2350-3-12.txt
-./technical/biomed/1471-2350-3-7.txt
-./technical/biomed/1471-2350-3-9.txt
-./technical/biomed/1471-2350-4-2.txt
-./technical/biomed/1471-2350-4-3.txt
-./technical/biomed/1471-2350-4-4.txt
-./technical/biomed/1471-2350-4-6.txt
-./technical/biomed/1471-2369-3-1.txt
-./technical/biomed/1471-2369-3-10.txt
-...
-```
+    ```bash
+    ./technical/biomed/1471-2350-3-12.txt
+    ./technical/biomed/1471-2350-3-7.txt
+    ./technical/biomed/1471-2350-3-9.txt
+    ./technical/biomed/1471-2350-4-2.txt
+    ./technical/biomed/1471-2350-4-3.txt
+    ./technical/biomed/1471-2350-4-4.txt
+    ./technical/biomed/1471-2350-4-6.txt
+    ./technical/biomed/1471-2369-3-1.txt
+    ./technical/biomed/1471-2369-3-10.txt
+    ...
+    ```
 
 2. `-size` option, which allows queries for file sizes. 
    - Example 1) `find ./technical -type f -size -2k`, which finds all regular files within the directory `./technical` that are less than 2 kilobytes. This can be helpful if you want to determine which files take up the least space.
      - Output:
-```bash
-./technical/plos/pmed.0020191.txt
-./technical/plos/pmed.0020226.txt
-```
+      ```bash
+      ./technical/plos/pmed.0020191.txt
+      ./technical/plos/pmed.0020226.txt
+      ```
   - Example 2) `find ./technical -type f -size +300k`, which finds all regular files within the directory `./technical` that are more than 300 kilobytes. This can be helpful if you want to determine which files take up the most space.
-      - Output:
-```bash
-./technical/government/Gen_Account_Office/d01591sp.txt
-./technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
-```
+    - Output:
+    ```bash
+    ./technical/government/Gen_Account_Office/d01591sp.txt
+    ./technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+    ```
 3. `-mtime` option, which finds files modified within a certain time period by days.
    - Example 1) `find ./technical -type f -mtime -1`, which finds all files within the directory `./technical` that have been modified within the last day. This can be helpful if you want to track the most recent files modified.
      - Output:
@@ -112,23 +112,23 @@ I am using the `find` command
 ```
   - Example 2) `find ./technical -type f -mtime +5`, which finds all files within the directory `./technical` that have been modified more than 5 days ago. This can be helpful if you want to track which files haven't been touched in a bit.
     - Output:
-```bash
-
-```
+    ```bash
+    
+    ```
 No output is produced because I haven't modified any files other than the initial download of them. 
 
 4. `-delete` option, deletes files based on a given query.
-   - Example 1) `find ./technical -type f -size +300k -delete`, which deletes all files more than 300 kilobytes. This can useful for removing files that are too large. 
-       - Output:
-``` bash
-
-```
+  - Example 1) `find ./technical -type f -size +300k -delete`, which deletes all files more than 300 kilobytes. This can useful for removing files that are too large. 
+    - Output:
+    ``` bash
+    
+    ```
 No output is produced becuase the option simply deletes the files. 
   - Example 2) `find ./technical -type f -mtime +30 -delete`, which deletes all files less than 2 kilobytes. This can be useful for removing files that might not have been utilized for a long time.
-      - Output:
-``` bash
-
-```
+    - Output:
+    ``` bash
+    
+    ```
 No output is produced becuase the option simply deletes the files. 
 
 Source: https://ss64.com/bash/find.html
