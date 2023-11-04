@@ -55,19 +55,19 @@ I am using the `find` command
 1. `-type` option, which searches based on a specific type. 
   - Example 1) `find ./technical -type d`, which finds all directories within the directory `./technical`. This is useful if you want to filter out only the directories. 
     - Output:
-```bash
-./technical
-./technical/911report
-./technical/biomed
-./technical/government
-./technical/government/About_LSC
-./technical/government/Alcohol_Problems
-./technical/government/Env_Prot_Agen
-./technical/government/Gen_Account_Office
-./technical/government/Media
-./technical/government/Post_Rate_Comm
-./technical/plos
-```
+    ```bash
+    ./technical
+    ./technical/911report
+    ./technical/biomed
+    ./technical/government
+    ./technical/government/About_LSC
+    ./technical/government/Alcohol_Problems
+    ./technical/government/Env_Prot_Agen
+    ./technical/government/Gen_Account_Office
+    ./technical/government/Media
+    ./technical/government/Post_Rate_Comm
+    ./technical/plos
+    ```
   - Example 2) `find ./technical -type f`, which finds all regular files within the directory `./technical`. This is useful if you want to filter out only the files. 
     - Output:
 ```bash
