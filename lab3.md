@@ -53,7 +53,7 @@ The issue with the method was that instead of modifying the `newArray`, we were 
 ## Part 2 - Researching Commands
 I am using the `find` command
 1. `-type` option, which searches based on a specific type. 
-  - `find ./technical -type d`
+  - Example 1) `find ./technical -type d`, which finds all directories within the directory `./technical`. This is useful if you want to filter out only the directories. 
     - Output:
 ```bash
 ./technical
@@ -67,4 +67,18 @@ I am using the `find` command
 ./technical/government/Media
 ./technical/government/Post_Rate_Comm
 ./technical/plos
+```
+  - Example 2) `find ./technical -type f`, which finds all regular files within the directory `./technical`. This is useful if you want to filter out only the files. 
+    - Output:
+```bash
+./technical/biomed/1471-2350-3-12.txt
+./technical/biomed/1471-2350-3-7.txt
+./technical/biomed/1471-2350-3-9.txt
+./technical/biomed/1471-2350-4-2.txt
+./technical/biomed/1471-2350-4-3.txt
+./technical/biomed/1471-2350-4-4.txt
+./technical/biomed/1471-2350-4-6.txt
+./technical/biomed/1471-2369-3-1.txt
+./technical/biomed/1471-2369-3-10.txt
+...
 ```
