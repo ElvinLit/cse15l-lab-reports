@@ -84,12 +84,12 @@ I am using the `find` command
     ```
 
 2. `-size` option, which allows queries for file sizes. 
-   - Example 1) `find ./technical -type f -size -2k`, which finds all regular files within the directory `./technical` that are less than 2 kilobytes. This can be helpful if you want to determine which files take up the least space.
-     - Output:
-      ```bash
-      ./technical/plos/pmed.0020191.txt
-      ./technical/plos/pmed.0020226.txt
-      ```
+  - Example 1) `find ./technical -type f -size -2k`, which finds all regular files within the directory `./technical` that are less than 2 kilobytes. This can be helpful if you want to determine which files take up the least space.
+    - Output:
+    ```bash
+    ./technical/plos/pmed.0020191.txt
+    ./technical/plos/pmed.0020226.txt
+    ```
   - Example 2) `find ./technical -type f -size +300k`, which finds all regular files within the directory `./technical` that are more than 300 kilobytes. This can be helpful if you want to determine which files take up the most space.
     - Output:
     ```bash
@@ -97,19 +97,19 @@ I am using the `find` command
     ./technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
     ```
 3. `-mtime` option, which finds files modified within a certain time period by days.
-   - Example 1) `find ./technical -type f -mtime -1`, which finds all files within the directory `./technical` that have been modified within the last day. This can be helpful if you want to track the most recent files modified.
-     - Output:
-```bash
-./technical/biomed/1471-2350-3-12.txt
-./technical/biomed/1471-2350-3-7.txt
-./technical/biomed/1471-2350-3-9.txt
-./technical/biomed/1471-2350-4-2.txt
-./technical/biomed/1471-2350-4-3.txt
-./technical/biomed/1471-2350-4-4.txt
-./technical/biomed/1471-2350-4-6.txt
-./technical/biomed/1471-2369-3-1.txt
-...
-```
+  - Example 1) `find ./technical -type f -mtime -1`, which finds all files within the directory `./technical` that have been modified within the last day. This can be helpful if you want to track the most recent files modified.
+    - Output:
+    ```bash
+    ./technical/biomed/1471-2350-3-12.txt
+    ./technical/biomed/1471-2350-3-7.txt
+    ./technical/biomed/1471-2350-3-9.txt
+    ./technical/biomed/1471-2350-4-2.txt
+    ./technical/biomed/1471-2350-4-3.txt
+    ./technical/biomed/1471-2350-4-4.txt
+    ./technical/biomed/1471-2350-4-6.txt
+    ./technical/biomed/1471-2369-3-1.txt
+    ...
+    ```
   - Example 2) `find ./technical -type f -mtime +5`, which finds all files within the directory `./technical` that have been modified more than 5 days ago. This can be helpful if you want to track which files haven't been touched in a bit.
     - Output:
     ```bash
