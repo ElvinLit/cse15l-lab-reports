@@ -51,7 +51,7 @@ After:
 The issue with the method was that instead of modifying the `newArray`, we were modifying the original `arr`. As a result, the method would always return a list of 0s since the elements that were being copied were values of 0 from the newly created empty array. To fix this, I simply changed the method to modify `newArray` so that it gets filled with elements from the original array. 
 
 ## Part 2 - Researching Commands
-I am using the `find` command
+I am using the `find` command  
 Command 1 - `-type` option, which searches based on a specific type.
 
 Example 1) `find ./technical -type d`, which finds all directories within the directory `./technical`. This is useful if you want to filter out only the directories. 
