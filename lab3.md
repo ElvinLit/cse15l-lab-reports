@@ -114,6 +114,7 @@ Output:
 ```
 Example 2) `find ./technical -type f -mtime +5`, which finds all files within the directory `./technical` that have been modified more than 5 days ago. This can be helpful if you want to track which files haven't been touched in a bit.
 Output: No output is produced because I haven't modified any files other than the initial download of them.  
+  
 Option 4 - `-delete` option, deletes files based on a given query.  
 
 Example 1) `find ./technical -type f -size +300k -delete`, which deletes all files more than 300 kilobytes. This can useful for removing files that are too large. 
