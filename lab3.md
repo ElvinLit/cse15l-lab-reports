@@ -68,6 +68,7 @@ I am using the `find` command
       ./technical/government/Post_Rate_Comm
       ./technical/plos
       ```
+      ```
 
   - Example 2) `find ./technical -type f`, which finds all regular files within the directory `./technical`. This is useful if you want to filter out only the files. 
       - Output:
@@ -91,6 +92,7 @@ I am using the `find` command
       ./technical/plos/pmed.0020191.txt
       ./technical/plos/pmed.0020226.txt
       ```
+      ```
       
   - Example 2) `find ./technical -type f -size +300k`, which finds all regular files within the directory `./technical` that are more than 300 kilobytes. This can be helpful if you want to determine which files take up the most space.
       - Output:
@@ -111,6 +113,7 @@ I am using the `find` command
       ./technical/biomed/1471-2350-4-6.txt
       ./technical/biomed/1471-2369-3-1.txt
       ...
+      ```
       ```
       
   - Example 2) `find ./technical -type f -mtime +5`, which finds all files within the directory `./technical` that have been modified more than 5 days ago. This can be helpful if you want to track which files haven't been touched in a bit.
