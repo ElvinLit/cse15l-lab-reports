@@ -81,7 +81,7 @@ I am using the `find` command
       ./technical/biomed/1471-2369-3-1.txt
       ./technical/biomed/1471-2369-3-10.txt
       ...
-        
+      ```
 
 2. `-size` option, which allows queries for file sizes. 
   - Example 1) `find ./technical -type f -size -2k`, which finds all regular files within the directory `./technical` that are less than 2 kilobytes. This can be helpful if you want to determine which files take up the least space.
