@@ -68,6 +68,7 @@ I am using the `find` command
       ./technical/government/Post_Rate_Comm
       ./technical/plos
       ```
+
   - Example 2) `find ./technical -type f`, which finds all regular files within the directory `./technical`. This is useful if you want to filter out only the files. 
       - Output:
       ```bash
