@@ -34,7 +34,7 @@ vim Lis <tab> .java <enter>
 ![Image](lab4_step7.png)
 
 ## Step 8 - *Run the tests, demonstrating that they now succeed*  
-To run the tests, I use a shortcut by utilizing the `Ctrl + R` feature in bash, which searches for previous commands. As such, this helped me use my previous commands I already ran in step 6.  
+To run the tests, I use a shortcut by utilizing the `Ctrl + R` feature in bash, which searches for previous commands. As such, this autofilled and helped me use my previous commands I already ran in step 6.  
 ```
 <Ctrl+R> javac <enter>
 <Ctrl+R> java <enter>
