@@ -48,6 +48,6 @@ git add ListExamples.java<enter>
 git commit -m "Fixed bug"<enter>
 git push <enter>
 ```
-![Image](lab4_step9_add.png)
-![Image](lab4_step9_commit.png)
-![Image](lab4_step9_push.png)
+![Image](lab4_step9_add.png)  
+![Image](lab4_step9_commit.png)  
+![Image](lab4_step9_push.png)  
