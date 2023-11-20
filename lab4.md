@@ -28,7 +28,7 @@ To fix the failing test, I used vim to edit `ListExamples.java`. This is accesse
 ```
 vim Lis <tab> .java <enter>
 ?index1<i>
-<right><right><right><right><right><right><del><2>
+<right><right><right><right><right><right><del> 2
 <esc> :wq <enter>
 ```
 ![Image](lab4_step7.png)
