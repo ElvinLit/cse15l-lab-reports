@@ -44,7 +44,7 @@ Lab Report 5/
 ```
 
 - InsertionSort.java
-```
+```java
 public class InsertionSort {
     public static void sorter(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
@@ -63,7 +63,7 @@ public class InsertionSort {
 ```
 
 - InsertionSortTests.java
-```
+```java
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -109,7 +109,7 @@ public class Sorting {
 ```
 
 - test.sh
-```
+```bash
 javac -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" *.java
 java -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" org.junit.runner.JUnitCore InsertionSortTests
 ```
