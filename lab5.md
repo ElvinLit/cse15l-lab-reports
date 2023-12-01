@@ -8,4 +8,6 @@
 - Here is my data that I attempted to sort:  
   ![Image](lab5_datasorting.png)  
 - Here are my test cases that I created, ran with my bash script `test.sh`:  
-  ![Image](lab5_bubblesorttestinitial.png)  
+  ![Image](lab5_bubblesorttestinitial.png)
+- Here is my `test.sh` bash script, which I used to compile and run my tests:
+  ![Image](lab5_bashscript.png)
