@@ -83,14 +83,6 @@ public class InsertionSortTests {
         InsertionSort.sorter(actual);
         assertArrayEquals(expected, actual);
     }
-
-    @Test
-    public void test3() {
-        int[] actual = {3, 2, 1, 4, 5};
-        int[] expected = {1, 2, 3, 4, 5};
-        InsertionSort.sorter(actual);
-        assertArrayEquals(expected, actual);
-    }
 }
 ```
 
@@ -113,3 +105,5 @@ public class Sorting {
 javac -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" *.java
 java -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" org.junit.runner.JUnitCore InsertionSortTests
 ```
+
+To trigger the bug, you can simply run `bash test.sh` to compile all the files and test, and then run `java Sorting` to run the buggy insertion sort on the data within Sorter.java, which will output a list that is not sorted correctly. In order to fix the bug, simply change the `j >= 0` in line 8 of InsertionSort.java to `j > 0`. You can then verify this with more test cases such as the one shown in step 3, and ultimately run `bash test.sh` again and `java Sorting` to see that the list is now correctly sorted. 
