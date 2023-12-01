@@ -31,8 +31,9 @@ The student managed to fix his implementation of insertion sort. Here is an over
   ![Image](lab5_bashsuccess2.png)  
   ![Image](lab5_mydataoutput2.png)  
 4. At the end, all the information needed about the setup including: The file & directory structure needed, The contents of each file before fixing the bug, The full command line (or lines) you ran to trigger the bug, A description of what to edit to fix the bug.
-Directory Structure:
   
+Directory Structure:
+This is the directory structure, and the current directory should be `Lab Report 5/`.
 ```
 Lab Report 5/
 |-- Lib/
