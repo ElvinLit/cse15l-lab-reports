@@ -10,8 +10,10 @@
 - And this is the output for when I sorted my data:  
   ![Image](lab5_mydataoutput.png)  
 - Here are my test cases that I created, ran with my bash script `test.sh`:  
-  ![Image](lab5_sortertests.png)  
+  ![Image](lab5_sortertests.png)
 - Here is my `test.sh` bash script, which I used to compile and run my tests:
-  ![Image](lab5_bashscript.png)  
+  ![Image](lab5_bashscript.png)
+- When I run the script, all my test cases seem to correctly succeed:
+  ![Image](lab5_bashsuccess.png)  
 
 **Teaching Assistant:** 
