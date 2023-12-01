@@ -30,4 +30,86 @@ The student managed to fix his implementation of insertion sort. Here is an over
 - Doing so, the test ran successfully and the student was able to sort correctly.  
   ![Image](lab5_bashsuccess2.png)  
   ![Image](lab5_mydataoutput2.png)  
-4. At the end, all the information needed about the setup including: The file & directory structure needed, The contents of each file before fixing the bug, The full command line (or lines) you ran to trigger the bug, A description of what to edit to fix the bug.  
+4. At the end, all the information needed about the setup including: The file & directory structure needed, The contents of each file before fixing the bug, The full command line (or lines) you ran to trigger the bug, A description of what to edit to fix the bug.
+- Directory Structure:
+```
+Lab Report 5/
+|-- Lib/
+|   |-- hamcrest-core-1.3.jar
+|   `-- junit-4.13.2.jar
+|-- InsertionSort.java
+|-- InsertionSortTests.java
+|-- Sorting.java 
+`-- test.sh
+```
+
+- InsertionSort.java
+```
+public class InsertionSort {
+    public static void sorter(int[] arr) {
+        for (int i = 1; i < arr.length; i++) {
+            int key = arr[i];
+            int j = i - 1;
+
+            
+            while (j >= 0 && arr[j] > key) { 
+                arr[j + 1] = arr[j];
+                j = j - 1;
+            }
+            arr[j + 1] = key;
+        }
+    }
+}
+```
+
+- InsertionSortTests.java
+```
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class InsertionSortTests {
+    @Test
+    public void test1() {
+        int[] actual = {5, 9, 6, 7, 8};
+        int[] expected = {5, 6, 7, 8, 9};
+        InsertionSort.sorter(actual);
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void test2() {
+        int[] actual = {1, 3, 2, 4, 5};
+        int[] expected = {1, 2, 3, 4, 5};
+        InsertionSort.sorter(actual);
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void test3() {
+        int[] actual = {3, 2, 1, 4, 5};
+        int[] expected = {1, 2, 3, 4, 5};
+        InsertionSort.sorter(actual);
+        assertArrayEquals(expected, actual);
+    }
+}
+```
+
+- Sorting.java
+```
+import java.util.*;
+
+public class Sorting {
+    public static void main(String[] args) {
+        int[] myData = {2, 3, 1, 4, 5};
+        InsertionSort.sorter(myData);
+
+        System.out.println(Arrays.toString(myData));
+    }
+}
+```
+
+- test.sh
+```
+javac -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" *.java
+java -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" org.junit.runner.JUnitCore InsertionSortTests
+```
