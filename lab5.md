@@ -31,7 +31,8 @@ The student managed to fix his implementation of insertion sort. Here is an over
   ![Image](lab5_bashsuccess2.png)  
   ![Image](lab5_mydataoutput2.png)  
 4. At the end, all the information needed about the setup including: The file & directory structure needed, The contents of each file before fixing the bug, The full command line (or lines) you ran to trigger the bug, A description of what to edit to fix the bug.
-- Directory Structure:
+Directory Structure:
+  
 ```
 Lab Report 5/
 |-- Lib/
@@ -42,8 +43,8 @@ Lab Report 5/
 |-- Sorting.java 
 `-- test.sh
 ```
-
-- InsertionSort.java
+  
+InsertionSort.java
 ```java
 public class InsertionSort {
     public static void sorter(int[] arr) {
@@ -61,8 +62,8 @@ public class InsertionSort {
     }
 }
 ```
-
-- InsertionSortTests.java
+  
+InsertionSortTests.java
 ```java
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -85,8 +86,8 @@ public class InsertionSortTests {
     }
 }
 ```
-
-- Sorting.java
+  
+Sorting.java
 ```java
 import java.util.*;
 
@@ -99,8 +100,8 @@ public class Sorting {
     }
 }
 ```
-
-- test.sh
+  
+test.sh
 ```bash
 javac -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" *.java
 java -cp ".;lib\junit-4.13.2.jar;lib\hamcrest-core-1.3.jar" org.junit.runner.JUnitCore InsertionSortTests
